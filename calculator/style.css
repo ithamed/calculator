@@ -1,0 +1,33 @@
+body{
+  background-color: thistle;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#calculator{
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(7, 75px);
+  justify-content: center;
+  align-content: center;
+}
+#calculator > button{
+  cursor: pointer;
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: wheat;
+  font-size: 1.5rem;
+}
+#calculator > button:hover{
+  background-color: white;
+}
+#display{
+  grid-column: 1/-1;
+  background-color: red;
+  color: white;
+  font-size: 1.5rem;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+#equal{
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
